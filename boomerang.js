@@ -374,8 +374,8 @@ boomr = {
 		}
 
 		// use document.URL instead of location.href because of a safari bug
-		url = impl.beacon_url + '?v=' + encodeURIComponent(BOOMR.version) +
-			'&u=' + encodeURIComponent(d.URL.replace(/#.*/, ''));
+		url = impl.beacon_url + '?v=' + encodeURIComponent(BOOMR.version);// +
+//			'&u=' + encodeURIComponent(d.URL.replace(/#.*/, ''));
 
 		for(k in impl.vars) {
 			if(impl.vars.hasOwnProperty(k)) {
